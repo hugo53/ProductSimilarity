@@ -17,17 +17,13 @@ public class Crawler {
 	private HtmlPage page = null;
 	private String startUrl;
 
-	public Crawler(boolean enableJS) {
+	public Crawler() {
 		client = new WebClient(BrowserVersion.FIREFOX_3_6);
-		client.setJavaScriptEnabled(enableJS);
+		client.setJavaScriptEnabled(true);
 		client.setThrowExceptionOnScriptError(false);
 		client.setThrowExceptionOnFailingStatusCode(false);
-
-		if (enableJS) {
-			client.setAjaxController(new NicelyResynchronizingAjaxController());
-			client.waitForBackgroundJavaScript(1000);
-		}
-
+		client.setAjaxController(new NicelyResynchronizingAjaxController());
+		client.waitForBackgroundJavaScript(1000);
 		client.setCssEnabled(false);
 	}
 
@@ -48,37 +44,54 @@ public class Crawler {
 
 	public String getPropertyByXPath(HtmlPage page, String xPath) {
 		List<?> divs = page.getByXPath(xPath);
-		if (divs.size() == 1) {
-			DomText property = (DomText) divs.get(0);
-			return property.getTextContent();
+		if (divs.size() > 0) {
+			if (divs.size() == 1) {
+				DomText property = (DomText) divs.get(0);
+				return property.getTextContent();
+			} else {
+				if (divs.size() == 2) {
+					DomText property = (DomText) divs.get(1);
+					return property.getTextContent();
+				}
+				if (divs.size() == 4) {
+					DomText property = (DomText) divs.get(2);
+					return property.getTextContent();
+				}
+			}
 		}
 		return "NULL";
 	}
 
-	public void crawl(String url) {
-		WebClient client = new WebClient();
+	public void crawl(String url) throws FailingHttpStatusCodeException,
+			MalformedURLException, IOException {
 		try {
-			HtmlPage page = client.getPage(url);
+			page = client.getPage(url);
 
 			// GET INFORS
 			// get name
 			String name = getPropertyByXPath(page,
-					"//*[@id=\"productsummary\"]/h1");
+					"//*[@id=\"productsummary\"]/h1/text()");
 
+			// get model
 			String model = getPropertyByXPath(page,
 					"//*[@id=\"productsummary\"]/div[1]/div/h2/text()");
 
+			// get sku
 			String sku = getPropertyByXPath(page,
 					"//*[@id=\"productsummary\"]/div[1]/div/text()");
+			// *[@id="productsummary"]/div[1]/div/span[1]/strong
 
+			// get review point
 			String reviewPoint = getPropertyByXPath(page,
-					"//*[@id=\"productsummary\"]/div[2]/div/span/strong/span[1]");
+					"//*[@id=\"productsummary\"]/div[2]/div/span/strong/span[1]/text()");
 
+			// get warranty part
 			String warrantyPart = getPropertyByXPath(page,
-					"//*[@id=\"tabbed-specifications\"]/ul/li[1]/div[2]");
+					"//*[@id=\"tabbed-specifications\"]/ul/li[1]/div[2]/text()");
 
 			System.out.println(name + "--" + model + "--" + sku + "--"
-					+ reviewPoint + "-- " + warrantyPart);
+					+ reviewPoint + "--" + warrantyPart);
+			// + reviewPoint + "-- " + warrantyPart);
 		} catch (FailingHttpStatusCodeException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -96,8 +109,15 @@ public class Crawler {
 
 	}
 
-	public static void main(String[] args) {
-		Crawler one = new Crawler(true);
+	public void closeCrawler() {
+		client.closeAllWindows();
+	}
+
+	public static void main(String[] args)
+			throws FailingHttpStatusCodeException, MalformedURLException,
+			IOException {
+		Crawler one = new Crawler();
 		one.crawl("http://www.bestbuy.com/site/HP+-+15.6%26%2334%3B+Pavilion+Laptop+-+8GB+Memory+-+750GB+Hard+Drive+-+Natural+Silver/5608295.p?id=1218672046425&skuId=5608295");
+		one.closeCrawler();
 	}
 }

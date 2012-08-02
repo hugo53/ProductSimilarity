@@ -6,6 +6,7 @@ import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException;
 import com.gargoylesoftware.htmlunit.NicelyResynchronizingAjaxController;
 import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.html.DomText;
 import com.gargoylesoftware.htmlunit.html.HtmlHeading1;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
@@ -37,10 +38,11 @@ public class Tester {
 
 		// Get product's name
 		// HtmlDivision div = page.getHtmlElementById("wrapper");
-		List<?> divs = page.getByXPath("//*[@id=\"productsummary\"]/h1");
+		List<?> divs = page.getByXPath("//*[@id=\"productsummary\"]/h1/text()");
 		System.out.println("size of divs is " + divs.size());
 
-		HtmlHeading1 a = (HtmlHeading1) divs.get(0);
+		//HtmlHeading1 a = (HtmlHeading1) divs.get(0);
+		DomText a = (DomText) divs.get(0);
 		System.out.println("it is " + a.getTextContent());
 
 		client.closeAllWindows();
