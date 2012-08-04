@@ -1,203 +1,94 @@
 package hd.product;
 
+import hd.bestbuy.crawler.ProcessData;
+
 public class Laptop {
 
+	// Review attrs
+	// f compare
+
 	// Attributes
+	private String title;
 	private String name;
 	private String model;
-	private String sku;
-	private String reviewPoint;
-
-	// Specification Attribute
-	private String warrantyPart;
-	private String warrantyLabor;
-	private String height;
-	private String width;
-	private String depth;
-	private String processorBrand;
-	private String processorGeneration;
-	private String processorSpeed;
-	private String batteryType;
-	private String displayType;
-	private String screenSize;
+	private String screen;
 	private String ram;
-	private String ramExpandableTo;
-	private String ramType;
-	private String hardDriveSize;
-	private String opticalDrive;
-	private String opticalDriveSpeed;
-	private String directDicsLabeling;
-	private String digitalMediaReader;
-	private String graphics;
-	private String videoMemory;
-	private String tvTuner;
-	private String mpeg;
-	private String buildInWebcam;
-	private String modem;
-	private String networking;
-	private String wireless;
-	private String bluetooth;
-	private String sVideoOutput;
-	private String audio;
-	private String speakers;
-	private String pcmcia;
-	private String usbPorts;
-	private String ieee1394Ports;
-	private String parallelPorts;
-	private String gamePorts;
+	private String ram_max_support;
+	private String hdd_size;
+	private String hdd_type;
+	private String optical_drive;
 	private String weight;
-	private String batteryLife;
-	private String pointingDevice;
-	private String blurayPlayer;
-	private String operatingSystem;
-	private String systemVersion;
-	private String includedSoftware;
-	private String energyStarQuanlified;
-	private String bestbuyPCApp;
-	private String graphicsChip;
-	private String blacklitKeyboard;
-	private String driveCapacity;
-	private String graphicsCard;
-	private String wirelessDisplay;
-	private String upc;
+	private String graphics_card;
+	private String os;
+	private String cpu_type;
+	private String cpu_speed;
+	private String cpu_cache;
+	private String battery_type;
+	private String warranty;
+	private String price;
 
-	// Constructor without parameter
 	public Laptop() {
 	}
 
-	// Constructor with all fields
 	/**
+	 * @param title
 	 * @param name
 	 * @param model
-	 * @param sKU
-	 * @param reviewPoint
-	 * @param warrantyPart
-	 * @param warrantyLabor
-	 * @param height
-	 * @param width
-	 * @param depth
-	 * @param processorBrand
-	 * @param processorGeneration
-	 * @param processorSpeed
-	 * @param batteryType
-	 * @param displayType
-	 * @param screenSize
+	 * @param screen
 	 * @param ram
-	 * @param ramExpandableTo
-	 * @param ramType
-	 * @param hardDriveSize
-	 * @param opticalDrive
-	 * @param opticalDriveSpeed
-	 * @param directDicsLabeling
-	 * @param digitalMediaReader
-	 * @param graphics
-	 * @param videoMemory
-	 * @param tvTuner
-	 * @param mpeg
-	 * @param buildInWebcam
-	 * @param modem
-	 * @param networking
-	 * @param wireless
-	 * @param bluetooth
-	 * @param sVideoOutput
-	 * @param audio
-	 * @param speakers
-	 * @param pcmcia
-	 * @param usbPorts
-	 * @param ieee1394Ports
-	 * @param parallelPorts
-	 * @param gamePorts
+	 * @param ram_max_support
+	 * @param hdd_size
+	 * @param hdd_type
+	 * @param optical_drive
 	 * @param weight
-	 * @param batteryLife
-	 * @param pointingDevice
-	 * @param blurayPlayer
-	 * @param operatingSystem
-	 * @param systemVersion
-	 * @param includedSoftware
-	 * @param energyStarQuanlified
-	 * @param bestbuyPCApp
-	 * @param graphicsChip
-	 * @param blacklitKeyboard
-	 * @param driveCapacity
-	 * @param graphicsCard
-	 * @param wirelessDisplay
-	 * @param upc
+	 * @param graphics_card
+	 * @param os
+	 * @param cpu_type
+	 * @param cpu_speed
+	 * @param cpu_cache
+	 * @param battery_type
+	 * @param warranty
+	 * @param price
 	 */
-	public Laptop(String name, String model, String sKU, String reviewPoint,
-			String warrantyPart, String warrantyLabor, String height,
-			String width, String depth, String processorBrand,
-			String processorGeneration, String processorSpeed,
-			String batteryType, String displayType, String screenSize,
-			String ram, String ramExpandableTo, String ramType,
-			String hardDriveSize, String opticalDrive,
-			String opticalDriveSpeed, String directDicsLabeling,
-			String digitalMediaReader, String graphics, String videoMemory,
-			String tvTuner, String mpeg, String buildInWebcam, String modem,
-			String networking, String wireless, String bluetooth,
-			String sVideoOutput, String audio, String speakers, String pcmcia,
-			String usbPorts, String ieee1394Ports, String parallelPorts,
-			String gamePorts, String weight, String batteryLife,
-			String pointingDevice, String blurayPlayer, String operatingSystem,
-			String systemVersion, String includedSoftware,
-			String energyStarQuanlified, String bestbuyPCApp,
-			String graphicsChip, String blacklitKeyboard, String driveCapacity,
-			String graphicsCard, String wirelessDisplay, String upc) {
+	public Laptop(String title, String name, String model, String screen,
+			String ram, String ram_max_support, String hdd_size,
+			String hdd_type, String optical_drive, String weight,
+			String graphics_card, String os, String cpu_type, String cpu_speed,
+			String cpu_cache, String battery_type, String warranty, String price) {
 		super();
+		this.title = title;
 		this.name = name;
 		this.model = model;
-		this.sku = sKU;
-		this.reviewPoint = reviewPoint;
-		this.warrantyPart = warrantyPart;
-		this.warrantyLabor = warrantyLabor;
-		this.height = height;
-		this.width = width;
-		this.depth = depth;
-		this.processorBrand = processorBrand;
-		this.processorGeneration = processorGeneration;
-		this.processorSpeed = processorSpeed;
-		this.batteryType = batteryType;
-		this.displayType = displayType;
-		this.screenSize = screenSize;
+		this.screen = screen;
 		this.ram = ram;
-		this.ramExpandableTo = ramExpandableTo;
-		this.ramType = ramType;
-		this.hardDriveSize = hardDriveSize;
-		this.opticalDrive = opticalDrive;
-		this.opticalDriveSpeed = opticalDriveSpeed;
-		this.directDicsLabeling = directDicsLabeling;
-		this.digitalMediaReader = digitalMediaReader;
-		this.graphics = graphics;
-		this.videoMemory = videoMemory;
-		this.tvTuner = tvTuner;
-		this.mpeg = mpeg;
-		this.buildInWebcam = buildInWebcam;
-		this.modem = modem;
-		this.networking = networking;
-		this.wireless = wireless;
-		this.bluetooth = bluetooth;
-		this.sVideoOutput = sVideoOutput;
-		this.audio = audio;
-		this.speakers = speakers;
-		this.pcmcia = pcmcia;
-		this.usbPorts = usbPorts;
-		this.ieee1394Ports = ieee1394Ports;
-		this.parallelPorts = parallelPorts;
-		this.gamePorts = gamePorts;
+		this.ram_max_support = ram_max_support;
+		this.hdd_size = hdd_size;
+		this.hdd_type = hdd_type;
+		this.optical_drive = optical_drive;
 		this.weight = weight;
-		this.batteryLife = batteryLife;
-		this.pointingDevice = pointingDevice;
-		this.blurayPlayer = blurayPlayer;
-		this.operatingSystem = operatingSystem;
-		this.systemVersion = systemVersion;
-		this.includedSoftware = includedSoftware;
-		this.energyStarQuanlified = energyStarQuanlified;
-		this.bestbuyPCApp = bestbuyPCApp;
-		this.graphicsChip = graphicsChip;
-		this.blacklitKeyboard = blacklitKeyboard;
-		this.driveCapacity = driveCapacity;
-		this.graphicsCard = graphicsCard;
-		this.wirelessDisplay = wirelessDisplay;
-		this.upc = upc;
+		this.graphics_card = graphics_card;
+		this.os = os;
+		this.cpu_type = cpu_type;
+		this.cpu_speed = cpu_speed;
+		this.cpu_cache = cpu_cache;
+		this.battery_type = battery_type;
+		this.warranty = warranty;
+		this.price = price;
+	}
+
+	/**
+	 * @return the title
+	 */
+	public String getTitle() {
+		return title;
+	}
+
+	/**
+	 * @param title
+	 *            the title to set
+	 */
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	/**
@@ -231,198 +122,18 @@ public class Laptop {
 	}
 
 	/**
-	 * @return the sKU
+	 * @return the screen
 	 */
-	public String getSku() {
-		return sku;
+	public String getScreen() {
+		return screen;
 	}
 
 	/**
-	 * @param sKU
-	 *            the sKU to set
+	 * @param screen
+	 *            the screen to set
 	 */
-	public void setSKU(String sKU) {
-		this.sku = sKU;
-	}
-
-	/**
-	 * @return the reviewPoint
-	 */
-	public String getReviewPoint() {
-		return reviewPoint;
-	}
-
-	/**
-	 * @param reviewPoint
-	 *            the reviewPoint to set
-	 */
-	public void setReviewPoint(String reviewPoint) {
-		this.reviewPoint = reviewPoint;
-	}
-
-	/**
-	 * @return the warrantyPart
-	 */
-	public String getWarrantyPart() {
-		return warrantyPart;
-	}
-
-	/**
-	 * @param warrantyPart
-	 *            the warrantyPart to set
-	 */
-	public void setWarrantyPart(String warrantyPart) {
-		this.warrantyPart = warrantyPart;
-	}
-
-	/**
-	 * @return the warrantyLabor
-	 */
-	public String getWarrantyLabor() {
-		return warrantyLabor;
-	}
-
-	/**
-	 * @param warrantyLabor
-	 *            the warrantyLabor to set
-	 */
-	public void setWarrantyLabor(String warrantyLabor) {
-		this.warrantyLabor = warrantyLabor;
-	}
-
-	/**
-	 * @return the height
-	 */
-	public String getHeight() {
-		return height;
-	}
-
-	/**
-	 * @param height
-	 *            the height to set
-	 */
-	public void setHeight(String height) {
-		this.height = height;
-	}
-
-	/**
-	 * @return the width
-	 */
-	public String getWidth() {
-		return width;
-	}
-
-	/**
-	 * @param width
-	 *            the width to set
-	 */
-	public void setWidth(String width) {
-		this.width = width;
-	}
-
-	/**
-	 * @return the depth
-	 */
-	public String getDepth() {
-		return depth;
-	}
-
-	/**
-	 * @param depth
-	 *            the depth to set
-	 */
-	public void setDepth(String depth) {
-		this.depth = depth;
-	}
-
-	/**
-	 * @return the processorBrand
-	 */
-	public String getProcessorBrand() {
-		return processorBrand;
-	}
-
-	/**
-	 * @param processorBrand
-	 *            the processorBrand to set
-	 */
-	public void setProcessorBrand(String processorBrand) {
-		this.processorBrand = processorBrand;
-	}
-
-	/**
-	 * @return the processorGeneration
-	 */
-	public String getProcessorGeneration() {
-		return processorGeneration;
-	}
-
-	/**
-	 * @param processorGeneration
-	 *            the processorGeneration to set
-	 */
-	public void setProcessorGeneration(String processorGeneration) {
-		this.processorGeneration = processorGeneration;
-	}
-
-	/**
-	 * @return the processorSpeed
-	 */
-	public String getProcessorSpeed() {
-		return processorSpeed;
-	}
-
-	/**
-	 * @param processorSpeed
-	 *            the processorSpeed to set
-	 */
-	public void setProcessorSpeed(String processorSpeed) {
-		this.processorSpeed = processorSpeed;
-	}
-
-	/**
-	 * @return the batteryType
-	 */
-	public String getBatteryType() {
-		return batteryType;
-	}
-
-	/**
-	 * @param batteryType
-	 *            the batteryType to set
-	 */
-	public void setBatteryType(String batteryType) {
-		this.batteryType = batteryType;
-	}
-
-	/**
-	 * @return the displayType
-	 */
-	public String getDisplayType() {
-		return displayType;
-	}
-
-	/**
-	 * @param displayType
-	 *            the displayType to set
-	 */
-	public void setDisplayType(String displayType) {
-		this.displayType = displayType;
-	}
-
-	/**
-	 * @return the screenSize
-	 */
-	public String getScreenSize() {
-		return screenSize;
-	}
-
-	/**
-	 * @param screenSize
-	 *            the screenSize to set
-	 */
-	public void setScreenSize(String screenSize) {
-		this.screenSize = screenSize;
+	public void setScreen(String screen) {
+		this.screen = screen;
 	}
 
 	/**
@@ -441,363 +152,63 @@ public class Laptop {
 	}
 
 	/**
-	 * @return the ramExpandableTo
+	 * @return the ram_max_support
 	 */
-	public String getRamExpandableTo() {
-		return ramExpandableTo;
+	public String getRam_max_support() {
+		return ram_max_support;
 	}
 
 	/**
-	 * @param ramExpandableTo
-	 *            the ramExpandableTo to set
+	 * @param ram_max_support
+	 *            the ram_max_support to set
 	 */
-	public void setRamExpandableTo(String ramExpandableTo) {
-		this.ramExpandableTo = ramExpandableTo;
+	public void setRam_max_support(String ram_max_support) {
+		this.ram_max_support = ram_max_support;
 	}
 
 	/**
-	 * @return the ramType
+	 * @return the hdd_size
 	 */
-	public String getRamType() {
-		return ramType;
+	public String getHdd_size() {
+		return hdd_size;
 	}
 
 	/**
-	 * @param ramType
-	 *            the ramType to set
+	 * @param hdd_size
+	 *            the hdd_size to set
 	 */
-	public void setRamType(String ramType) {
-		this.ramType = ramType;
+	public void setHdd_size(String hdd_size) {
+		this.hdd_size = hdd_size;
 	}
 
 	/**
-	 * @return the hardDriveSize
+	 * @return the hdd_type
 	 */
-	public String getHardDriveSize() {
-		return hardDriveSize;
+	public String getHdd_type() {
+		return hdd_type;
 	}
 
 	/**
-	 * @param hardDriveSize
-	 *            the hardDriveSize to set
+	 * @param hdd_type
+	 *            the hdd_type to set
 	 */
-	public void setHardDriveSize(String hardDriveSize) {
-		this.hardDriveSize = hardDriveSize;
+	public void setHdd_type(String hdd_type) {
+		this.hdd_type = hdd_type;
 	}
 
 	/**
-	 * @return the opticalDrive
+	 * @return the optical_drive
 	 */
-	public String getOpticalDrive() {
-		return opticalDrive;
+	public String getOptical_drive() {
+		return optical_drive;
 	}
 
 	/**
-	 * @param opticalDrive
-	 *            the opticalDrive to set
+	 * @param optical_drive
+	 *            the optical_drive to set
 	 */
-	public void setOpticalDrive(String opticalDrive) {
-		this.opticalDrive = opticalDrive;
-	}
-
-	/**
-	 * @return the opticalDriveSpeed
-	 */
-	public String getOpticalDriveSpeed() {
-		return opticalDriveSpeed;
-	}
-
-	/**
-	 * @param opticalDriveSpeed
-	 *            the opticalDriveSpeed to set
-	 */
-	public void setOpticalDriveSpeed(String opticalDriveSpeed) {
-		this.opticalDriveSpeed = opticalDriveSpeed;
-	}
-
-	/**
-	 * @return the directDicsLabeling
-	 */
-	public String getDirectDicsLabeling() {
-		return directDicsLabeling;
-	}
-
-	/**
-	 * @param directDicsLabeling
-	 *            the directDicsLabeling to set
-	 */
-	public void setDirectDicsLabeling(String directDicsLabeling) {
-		this.directDicsLabeling = directDicsLabeling;
-	}
-
-	/**
-	 * @return the digitalMediaReader
-	 */
-	public String getDigitalMediaReader() {
-		return digitalMediaReader;
-	}
-
-	/**
-	 * @param digitalMediaReader
-	 *            the digitalMediaReader to set
-	 */
-	public void setDigitalMediaReader(String digitalMediaReader) {
-		this.digitalMediaReader = digitalMediaReader;
-	}
-
-	/**
-	 * @return the graphics
-	 */
-	public String getGraphics() {
-		return graphics;
-	}
-
-	/**
-	 * @param graphics
-	 *            the graphics to set
-	 */
-	public void setGraphics(String graphics) {
-		this.graphics = graphics;
-	}
-
-	/**
-	 * @return the videoMemory
-	 */
-	public String getVideoMemory() {
-		return videoMemory;
-	}
-
-	/**
-	 * @param videoMemory
-	 *            the videoMemory to set
-	 */
-	public void setVideoMemory(String videoMemory) {
-		this.videoMemory = videoMemory;
-	}
-
-	/**
-	 * @return the tvTuner
-	 */
-	public String getTvTuner() {
-		return tvTuner;
-	}
-
-	/**
-	 * @param tvTuner
-	 *            the tvTuner to set
-	 */
-	public void setTvTuner(String tvTuner) {
-		this.tvTuner = tvTuner;
-	}
-
-	/**
-	 * @return the mpeg
-	 */
-	public String getMpeg() {
-		return mpeg;
-	}
-
-	/**
-	 * @param mpeg
-	 *            the mpeg to set
-	 */
-	public void setMpeg(String mpeg) {
-		this.mpeg = mpeg;
-	}
-
-	/**
-	 * @return the buildInWebcam
-	 */
-	public String getBuildInWebcam() {
-		return buildInWebcam;
-	}
-
-	/**
-	 * @param buildInWebcam
-	 *            the buildInWebcam to set
-	 */
-	public void setBuildInWebcam(String buildInWebcam) {
-		this.buildInWebcam = buildInWebcam;
-	}
-
-	/**
-	 * @return the modem
-	 */
-	public String getModem() {
-		return modem;
-	}
-
-	/**
-	 * @param modem
-	 *            the modem to set
-	 */
-	public void setModem(String modem) {
-		this.modem = modem;
-	}
-
-	/**
-	 * @return the networking
-	 */
-	public String getNetworking() {
-		return networking;
-	}
-
-	/**
-	 * @param networking
-	 *            the networking to set
-	 */
-	public void setNetworking(String networking) {
-		this.networking = networking;
-	}
-
-	/**
-	 * @return the wireless
-	 */
-	public String getWireless() {
-		return wireless;
-	}
-
-	/**
-	 * @param wireless
-	 *            the wireless to set
-	 */
-	public void setWireless(String wireless) {
-		this.wireless = wireless;
-	}
-
-	/**
-	 * @return the bluetooth
-	 */
-	public String getBluetooth() {
-		return bluetooth;
-	}
-
-	/**
-	 * @param bluetooth
-	 *            the bluetooth to set
-	 */
-	public void setBluetooth(String bluetooth) {
-		this.bluetooth = bluetooth;
-	}
-
-	/**
-	 * @return the sVideoOutput
-	 */
-	public String getsVideoOutput() {
-		return sVideoOutput;
-	}
-
-	/**
-	 * @param sVideoOutput
-	 *            the sVideoOutput to set
-	 */
-	public void setsVideoOutput(String sVideoOutput) {
-		this.sVideoOutput = sVideoOutput;
-	}
-
-	/**
-	 * @return the audio
-	 */
-	public String getAudio() {
-		return audio;
-	}
-
-	/**
-	 * @param audio
-	 *            the audio to set
-	 */
-	public void setAudio(String audio) {
-		this.audio = audio;
-	}
-
-	/**
-	 * @return the speakers
-	 */
-	public String getSpeakers() {
-		return speakers;
-	}
-
-	/**
-	 * @param speakers
-	 *            the speakers to set
-	 */
-	public void setSpeakers(String speakers) {
-		this.speakers = speakers;
-	}
-
-	/**
-	 * @return the pcmcia
-	 */
-	public String getPcmcia() {
-		return pcmcia;
-	}
-
-	/**
-	 * @param pcmcia
-	 *            the pcmcia to set
-	 */
-	public void setPcmcia(String pcmcia) {
-		this.pcmcia = pcmcia;
-	}
-
-	/**
-	 * @return the usbPorts
-	 */
-	public String getUsbPorts() {
-		return usbPorts;
-	}
-
-	/**
-	 * @param usbPorts
-	 *            the usbPorts to set
-	 */
-	public void setUsbPorts(String usbPorts) {
-		this.usbPorts = usbPorts;
-	}
-
-	/**
-	 * @return the ieee1394Ports
-	 */
-	public String getIeee1394Ports() {
-		return ieee1394Ports;
-	}
-
-	/**
-	 * @param ieee1394Ports
-	 *            the ieee1394Ports to set
-	 */
-	public void setIeee1394Ports(String ieee1394Ports) {
-		this.ieee1394Ports = ieee1394Ports;
-	}
-
-	/**
-	 * @return the parallelPorts
-	 */
-	public String getParallelPorts() {
-		return parallelPorts;
-	}
-
-	/**
-	 * @param parallelPorts
-	 *            the parallelPorts to set
-	 */
-	public void setParallelPorts(String parallelPorts) {
-		this.parallelPorts = parallelPorts;
-	}
-
-	/**
-	 * @return the gamePorts
-	 */
-	public String getGamePorts() {
-		return gamePorts;
-	}
-
-	/**
-	 * @param gamePorts
-	 *            the gamePorts to set
-	 */
-	public void setGamePorts(String gamePorts) {
-		this.gamePorts = gamePorts;
+	public void setOptical_drive(String optical_drive) {
+		this.optical_drive = optical_drive;
 	}
 
 	/**
@@ -816,214 +227,290 @@ public class Laptop {
 	}
 
 	/**
-	 * @return the batteryLife
+	 * @return the graphics_card
 	 */
-	public String getBatteryLife() {
-		return batteryLife;
+	public String getGraphics_card() {
+		return graphics_card;
 	}
 
 	/**
-	 * @param batteryLife
-	 *            the batteryLife to set
+	 * @param graphics_card
+	 *            the graphics_card to set
 	 */
-	public void setBatteryLife(String batteryLife) {
-		this.batteryLife = batteryLife;
+	public void setGraphics_card(String graphics_card) {
+		this.graphics_card = graphics_card;
 	}
 
 	/**
-	 * @return the pointingDevice
+	 * @return the os
 	 */
-	public String getPointingDevice() {
-		return pointingDevice;
+	public String getOs() {
+		return os;
 	}
 
 	/**
-	 * @param pointingDevice
-	 *            the pointingDevice to set
+	 * @param os
+	 *            the os to set
 	 */
-	public void setPointingDevice(String pointingDevice) {
-		this.pointingDevice = pointingDevice;
+	public void setOs(String os) {
+		this.os = os;
 	}
 
 	/**
-	 * @return the blurayPlayer
+	 * @return the cpu_type
 	 */
-	public String getBlurayPlayer() {
-		return blurayPlayer;
+	public String getCpu_type() {
+		return cpu_type;
 	}
 
 	/**
-	 * @param blurayPlayer
-	 *            the blurayPlayer to set
+	 * @param cpu_type
+	 *            the cpu_type to set
 	 */
-	public void setBlurayPlayer(String blurayPlayer) {
-		this.blurayPlayer = blurayPlayer;
+	public void setCpu_type(String cpu_type) {
+		this.cpu_type = cpu_type;
 	}
 
 	/**
-	 * @return the operatingSystem
+	 * @return the cpu_speed
 	 */
-	public String getOperatingSystem() {
-		return operatingSystem;
+	public String getCpu_speed() {
+		return cpu_speed;
 	}
 
 	/**
-	 * @param operatingSystem
-	 *            the operatingSystem to set
+	 * @param cpu_speed
+	 *            the cpu_speed to set
 	 */
-	public void setOperatingSystem(String operatingSystem) {
-		this.operatingSystem = operatingSystem;
+	public void setCpu_speed(String cpu_speed) {
+		this.cpu_speed = cpu_speed;
 	}
 
 	/**
-	 * @return the systemVersion
+	 * @return the cpu_cache
 	 */
-	public String getSystemVersion() {
-		return systemVersion;
+	public String getCpu_cache() {
+		return cpu_cache;
 	}
 
 	/**
-	 * @param systemVersion
-	 *            the systemVersion to set
+	 * @param cpu_cache
+	 *            the cpu_cache to set
 	 */
-	public void setSystemVersion(String systemVersion) {
-		this.systemVersion = systemVersion;
+	public void setCpu_cache(String cpu_cache) {
+		this.cpu_cache = cpu_cache;
 	}
 
 	/**
-	 * @return the includedSoftware
+	 * @return the battery_type
 	 */
-	public String getIncludedSoftware() {
-		return includedSoftware;
+	public String getBattery_type() {
+		return battery_type;
 	}
 
 	/**
-	 * @param includedSoftware
-	 *            the includedSoftware to set
+	 * @param battery_type
+	 *            the battery_type to set
 	 */
-	public void setIncludedSoftware(String includedSoftware) {
-		this.includedSoftware = includedSoftware;
+	public void setBattery_type(String battery_type) {
+		this.battery_type = battery_type;
 	}
 
 	/**
-	 * @return the energyStarQuanlified
+	 * @return the warranty
 	 */
-	public String getEnergyStarQuanlified() {
-		return energyStarQuanlified;
+	public String getWarranty() {
+		return warranty;
 	}
 
 	/**
-	 * @param energyStarQuanlified
-	 *            the energyStarQuanlified to set
+	 * @param warranty
+	 *            the warranty to set
 	 */
-	public void setEnergyStarQuanlified(String energyStarQuanlified) {
-		this.energyStarQuanlified = energyStarQuanlified;
+	public void setWarranty(String warranty) {
+		this.warranty = warranty;
 	}
 
 	/**
-	 * @return the bestbuyPCApp
+	 * @return the price
 	 */
-	public String getBestbuyPCApp() {
-		return bestbuyPCApp;
+	public String getPrice() {
+		return price;
 	}
 
 	/**
-	 * @param bestbuyPCApp
-	 *            the bestbuyPCApp to set
+	 * @param price
+	 *            the price to set
 	 */
-	public void setBestbuyPCApp(String bestbuyPCApp) {
-		this.bestbuyPCApp = bestbuyPCApp;
+	public void setPrice(String price) {
+		this.price = price;
 	}
 
-	/**
-	 * @return the graphicsChip
-	 */
-	public String getGraphicsChip() {
-		return graphicsChip;
+	// F scores
+	// for title
+	public double titleSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getTitle(), other.getTitle(),
+				threshold);
 	}
 
-	/**
-	 * @param graphicsChip
-	 *            the graphicsChip to set
-	 */
-	public void setGraphicsChip(String graphicsChip) {
-		this.graphicsChip = graphicsChip;
+	// for name
+	public double nameSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getName(), other.getName(),
+				threshold);
 	}
 
-	/**
-	 * @return the blacklitKeyboard
-	 */
-	public String getBlacklitKeyboard() {
-		return blacklitKeyboard;
+	// for battery_type
+	public double batteryTypeSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getBattery_type(),
+				other.getBattery_type(), threshold);
 	}
 
-	/**
-	 * @param blacklitKeyboard
-	 *            the blacklitKeyboard to set
-	 */
-	public void setBlacklitKeyboard(String blacklitKeyboard) {
-		this.blacklitKeyboard = blacklitKeyboard;
+	// for cpu_cache
+	public double cpuCacheSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getCpu_cache(),
+				other.getCpu_cache(), threshold);
 	}
 
-	/**
-	 * @return the driveCapacity
-	 */
-	public String getDriveCapacity() {
-		return driveCapacity;
+	// for cpu_speed
+	public double cpuSpeedSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getCpu_speed(),
+				other.getCpu_speed(), threshold);
 	}
 
-	/**
-	 * @param driveCapacity
-	 *            the driveCapacity to set
-	 */
-	public void setDriveCapacity(String driveCapacity) {
-		this.driveCapacity = driveCapacity;
+	// for cpu_type
+	public double cpuTypeSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getCpu_type(),
+				other.getCpu_type(), threshold);
 	}
 
-	/**
-	 * @return the graphicsCard
-	 */
-	public String getGraphicsCard() {
-		return graphicsCard;
+	// for graphics_card
+	public double graphicsCardSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getGraphics_card(),
+				other.getGraphics_card(), threshold);
 	}
 
-	/**
-	 * @param graphicsCard
-	 *            the graphicsCard to set
-	 */
-	public void setGraphicsCard(String graphicsCard) {
-		this.graphicsCard = graphicsCard;
+	// for hdd_size
+	public double hddSizeSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getHdd_size(),
+				other.getHdd_size(), threshold);
 	}
 
-	/**
-	 * @return the wirelessDisplay
-	 */
-	public String getWirelessDisplay() {
-		return wirelessDisplay;
+	// for hdd size
+	public double hddTypeSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getHdd_type(),
+				other.getHdd_type(), threshold);
 	}
 
-	/**
-	 * @param wirelessDisplay
-	 *            the wirelessDisplay to set
-	 */
-	public void setWirelessDisplay(String wirelessDisplay) {
-		this.wirelessDisplay = wirelessDisplay;
+	// for optical drive
+	public double opticalDriveSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getOptical_drive(),
+				other.getOptical_drive(), threshold);
 	}
 
-	/**
-	 * @return the upc
-	 */
-	public String getUpc() {
-		return upc;
+	// for os
+	public double osSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getOs(), other.getOs(),
+				threshold);
 	}
 
-	/**
-	 * @param upc
-	 *            the upc to set
-	 */
-	public void setUpc(String upc) {
-		this.upc = upc;
+	// for model
+	public double modelSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getModel(), other.getModel(),
+				threshold);
 	}
-	
-	public int 
+
+	// for ram
+	public double ramSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getRam(), other.getRam(),
+				threshold);
+	}
+
+	// for ram_max_support
+	public double ramMaxSupportTypeSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getRam_max_support(),
+				other.getRam_max_support(), threshold);
+	}
+
+	// for price
+	public double priceSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getPrice(), other.getPrice(),
+				threshold);
+	}
+
+	// for warranty
+	public double warrantySim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getWarranty(),
+				other.getWarranty(), threshold);
+	}
+
+	// for screen
+	public double screenSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getScreen(), other.getScreen(),
+				threshold);
+	}
+
+	// for weight
+	public double weightTypeSim(Laptop other, int threshold) {
+		return ProcessData.simByCommonWord(this.getWeight(), other.getWeight(),
+				threshold);
+	}
+
+	// Compute similarity score
+	public double similarTo(Laptop other, int[] threshold,
+			double[] featureWeights) {
+		// titleSim(other, threshold[0]) * featureWeights[0]
+		// double sim = (nameSim(other, threshold[1]) * featureWeights[1]
+		// + modelSim(other, threshold[2]) * featureWeights[2]
+		// + screenSim(other, threshold[3]) * featureWeights[3]
+		// + ramSim(other, threshold[4]) * featureWeights[4]
+		// + ramMaxSupportTypeSim(other, threshold[5]) * featureWeights[5]
+		// + hddSizeSim(other, threshold[6]) * featureWeights[6]
+		// + hddTypeSim(other, threshold[7]) * featureWeights[7]
+		// + opticalDriveSim(other, threshold[8]) * featureWeights[8]
+		// + weightTypeSim(other, threshold[9]) * featureWeights[9]
+		// + graphicsCardSim(other, threshold[10]) * featureWeights[10]
+		// + osSim(other, threshold[11]) * featureWeights[11]
+		// + cpuTypeSim(other, threshold[12]) * featureWeights[12]
+		// + cpuSpeedSim(other, threshold[13]) * featureWeights[13]
+		// + cpuCacheSim(other, threshold[14]) * featureWeights[14]
+		// + batteryTypeSim(other, threshold[15]) * featureWeights[15]
+		// + warrantySim(other, threshold[16]) * featureWeights[16] + priceSim(
+		// other, threshold[17]) * featureWeights[17])
+		// / (nameSim(other, threshold[1]) + modelSim(other, threshold[2])
+		// + screenSim(other, threshold[3])
+		// + ramSim(other, threshold[4])
+		// + ramMaxSupportTypeSim(other, threshold[5])
+		// + hddSizeSim(other, threshold[6])
+		// + hddTypeSim(other, threshold[7])
+		// + opticalDriveSim(other, threshold[8])
+		// + weightTypeSim(other, threshold[9])
+		// + graphicsCardSim(other, threshold[10])
+		// + osSim(other, threshold[11])
+		// + cpuTypeSim(other, threshold[12])
+		// + cpuSpeedSim(other, threshold[13])
+		// + cpuCacheSim(other, threshold[14])
+		// + batteryTypeSim(other, threshold[15])
+		// + warrantySim(other, threshold[16]) + priceSim(other,
+		// threshold[17])
+		//
+		// );
+		double sim = nameSim(other, threshold[1])
+				+ modelSim(other, threshold[2])
+				+ screenSim(other, threshold[3]) + ramSim(other, threshold[4])
+				+ ramMaxSupportTypeSim(other, threshold[5])
+				+ hddSizeSim(other, threshold[6])
+				+ hddTypeSim(other, threshold[7])
+				+ opticalDriveSim(other, threshold[8])
+				+ weightTypeSim(other, threshold[9])
+				+ graphicsCardSim(other, threshold[10])
+				+ osSim(other, threshold[11])
+				+ cpuTypeSim(other, threshold[12])
+				+ cpuSpeedSim(other, threshold[13])
+				+ cpuCacheSim(other, threshold[14])
+				+ batteryTypeSim(other, threshold[15])
+				+ warrantySim(other, threshold[16])
+				+ priceSim(other, threshold[17]);
+
+		return sim;
+	}
 }

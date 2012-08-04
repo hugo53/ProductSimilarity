@@ -4,10 +4,9 @@ import java.util.HashSet;
 import java.util.StringTokenizer;
 
 public class ProcessData {
-
-	private static String[] s_stopWords = { "m", "a", "about", "above",
-			"above", "across", "after", "afterwards", "again", "against",
-			"all", "almost", "alone", "along", "already", "also", "although",
+	public static String[] s_stopWords = { "m", "a", "about", "above", "above",
+			"across", "after", "afterwards", "again", "against", "all",
+			"almost", "alone", "along", "already", "also", "although",
 			"always", "am", "among", "amongst", "amoungst", "amount", "an",
 			"and", "another", "any", "anyhow", "anyone", "anything", "anyway",
 			"anywhere", "are", "around", "as", "at", "back", "be", "became",
@@ -53,7 +52,8 @@ public class ProcessData {
 			"would", "yet", "you", "your", "yours", "yourself", "yourselves",
 			"the" };
 
-	private HashSet<String> stopwords = new HashSet<String>(s_stopWords.length);
+	public static HashSet<String> stopwords = new HashSet<String>(
+			s_stopWords.length);
 
 	public ProcessData() {
 		for (String s : s_stopWords) {
@@ -62,7 +62,7 @@ public class ProcessData {
 	}
 
 	// Common Words
-	public int countCommonWord(String firstString, String secondString) {
+	public static int countCommonWord(String firstString, String secondString) {
 		int numberCommonWord = 0;
 		String[] firstTokens = firstString.split(" ");
 		String[] secondTokens = secondString.split(" ");
@@ -78,21 +78,36 @@ public class ProcessData {
 	}
 
 	// Check stopword
-	public boolean isStopword(String s) {
+	public static boolean isStopword(String s) {
 		return stopwords.contains(s);
 	}
 
 	// Remove Stopwords
-	public String removeStopwords(String beRemovedString) {
+	public static String removeStopwords(String beRemovedString) {
 		String resultString = new String();
 		StringTokenizer tokenizer = new StringTokenizer(beRemovedString);
 		while (tokenizer.hasMoreTokens()) {
 			String token = tokenizer.nextToken();
 			if (!isStopword(token)) {
-				resultString += token;
+				resultString += token + " ";
+
 			}
 		}
 		return resultString;
+	}
+
+	// Compute similarity using commond word
+	public static double simByCommonWord(String first, String second,
+			int threshold) {
+		int commonWord = ProcessData.countCommonWord(first, second);
+		if (commonWord >= threshold) {
+			return 1;
+		} else {
+			int oneLength = new StringTokenizer(first).countTokens();
+			int twoLength = new StringTokenizer(second).countTokens();
+			return (double) commonWord
+					/ ((oneLength > twoLength) ? oneLength : twoLength);
+		}
 	}
 
 	/**
@@ -101,8 +116,10 @@ public class ProcessData {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ProcessData one = new ProcessData();
+		System.out
+				.println(one
+						.removeStopwords("Lenovo is the best choice- ThinkPad Edge 03193SU 15.6\" LED Notebook - Intel Core i3 i3-380M 2.53 GHz - Black "));
 		System.out.println(one.countCommonWord("hello word one",
 				"hello star one"));
 	}
-
 }
