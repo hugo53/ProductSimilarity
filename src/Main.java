@@ -11,9 +11,8 @@ public class Main {
 	public static int[] threshold = { 0, 2, 1, 1, 1, 1, 1, 2, 1, 1, 3, 3, 3, 1,
 			1, 2, 1, 1 };
 	// features weight
-	public static double[] featureWeights = { 0, 0.06, 0.06, 0.06, 0.06, 0.06,
-			0.06, 0.06, 0.06, 0.06, 0.06, 0.06, 0.06, 0.06, 0.06, 0.06, 0.06,
-			0.04 };
+	public static double[] featureWeights = { 0, 8, 10, 10, 10, 8, 5, 4, 8, 4,
+			4, 2, 8, 10, 10, 6, 5, 5 };
 
 	public static Laptop readLaptop(String str) {
 		String[] array = str.split(",");
@@ -61,9 +60,8 @@ public class Main {
 
 		File f = new File("data/listOfProductscvs1.csv");
 		Laptop[] rst = read(f);
-		System.out.println(rst[0].similarTo(rst[1], threshold, featureWeights));
+		System.out.println(rst[2].similarTo(rst[3], threshold, featureWeights));
 
-		System.out.println(rst[0].warrantySim(rst[1], 2));
-		System.out.println("title" + rst[0].getTitle());
+		// System.out.println("title" + rst[0].getTitle());
 	}
 }

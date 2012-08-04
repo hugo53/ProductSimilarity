@@ -459,57 +459,59 @@ public class Laptop {
 	public double similarTo(Laptop other, int[] threshold,
 			double[] featureWeights) {
 		// titleSim(other, threshold[0]) * featureWeights[0]
-		// double sim = (nameSim(other, threshold[1]) * featureWeights[1]
-		// + modelSim(other, threshold[2]) * featureWeights[2]
-		// + screenSim(other, threshold[3]) * featureWeights[3]
-		// + ramSim(other, threshold[4]) * featureWeights[4]
-		// + ramMaxSupportTypeSim(other, threshold[5]) * featureWeights[5]
-		// + hddSizeSim(other, threshold[6]) * featureWeights[6]
-		// + hddTypeSim(other, threshold[7]) * featureWeights[7]
-		// + opticalDriveSim(other, threshold[8]) * featureWeights[8]
-		// + weightTypeSim(other, threshold[9]) * featureWeights[9]
-		// + graphicsCardSim(other, threshold[10]) * featureWeights[10]
-		// + osSim(other, threshold[11]) * featureWeights[11]
-		// + cpuTypeSim(other, threshold[12]) * featureWeights[12]
-		// + cpuSpeedSim(other, threshold[13]) * featureWeights[13]
-		// + cpuCacheSim(other, threshold[14]) * featureWeights[14]
-		// + batteryTypeSim(other, threshold[15]) * featureWeights[15]
-		// + warrantySim(other, threshold[16]) * featureWeights[16] + priceSim(
-		// other, threshold[17]) * featureWeights[17])
-		// / (nameSim(other, threshold[1]) + modelSim(other, threshold[2])
-		// + screenSim(other, threshold[3])
-		// + ramSim(other, threshold[4])
-		// + ramMaxSupportTypeSim(other, threshold[5])
-		// + hddSizeSim(other, threshold[6])
-		// + hddTypeSim(other, threshold[7])
-		// + opticalDriveSim(other, threshold[8])
-		// + weightTypeSim(other, threshold[9])
+		double totalWeight = 0;
+		for (double i : featureWeights) {
+			totalWeight += i;
+		}
+
+		double sim = (nameSim(other, threshold[1]) * featureWeights[1]
+				+ modelSim(other, threshold[2]) * featureWeights[2]
+				+ screenSim(other, threshold[3]) * featureWeights[3]
+				+ ramSim(other, threshold[4]) * featureWeights[4]
+				+ ramMaxSupportTypeSim(other, threshold[5]) * featureWeights[5]
+				+ hddSizeSim(other, threshold[6]) * featureWeights[6]
+				+ hddTypeSim(other, threshold[7]) * featureWeights[7]
+				+ opticalDriveSim(other, threshold[8]) * featureWeights[8]
+				+ weightTypeSim(other, threshold[9]) * featureWeights[9]
+				+ graphicsCardSim(other, threshold[10]) * featureWeights[10]
+				+ osSim(other, threshold[11]) * featureWeights[11]
+				+ cpuTypeSim(other, threshold[12]) * featureWeights[12]
+				+ cpuSpeedSim(other, threshold[13]) * featureWeights[13]
+				+ cpuCacheSim(other, threshold[14]) * featureWeights[14]
+				+ batteryTypeSim(other, threshold[15]) * featureWeights[15]
+				+ warrantySim(other, threshold[16]) * featureWeights[16] + priceSim(
+				other, threshold[17]) * featureWeights[17])
+				/ (totalWeight);
+		// double sim =
+		System.out.println("name: " + nameSim(other, threshold[1]));
+		System.out.println("model: " + modelSim(other, threshold[2]));
+		System.out.println("screen: " + screenSim(other, threshold[3]));
+		System.out.println("ram : " + ramSim(other, threshold[4]));
+
+		System.out.println("ram suppport: "
+				+ ramMaxSupportTypeSim(other, threshold[5]));
+		System.out.println("hdd size: " + hddSizeSim(other, threshold[6]));
+		System.out.println("hdd type: " + hddTypeSim(other, threshold[7]));
+		System.out.println("optical: " + opticalDriveSim(other, threshold[8]));
+		System.out.println("weight" + weightTypeSim(other, threshold[9]));
+		System.out.println("graphics" + graphicsCardSim(other, threshold[10]));
+		System.out.println("os: " + osSim(other, threshold[11]));
+		System.out.println("cpuType " + cpuTypeSim(other, threshold[12]));
+		System.out.println("cpu speed: " + cpuSpeedSim(other, threshold[13]));
+		System.out.println("cpucache: " + cpuCacheSim(other, threshold[14]));
+		System.out.println("battery: " + batteryTypeSim(other, threshold[15]));
+		System.out.println("warranty: " + warrantySim(other, threshold[16]));
+		System.out.println("price: " + priceSim(other, threshold[17]));
+		// +
+		// +
 		// + graphicsCardSim(other, threshold[10])
 		// + osSim(other, threshold[11])
 		// + cpuTypeSim(other, threshold[12])
 		// + cpuSpeedSim(other, threshold[13])
 		// + cpuCacheSim(other, threshold[14])
 		// + batteryTypeSim(other, threshold[15])
-		// + warrantySim(other, threshold[16]) + priceSim(other,
-		// threshold[17])
-		//
-		// );
-		double sim = nameSim(other, threshold[1])
-				+ modelSim(other, threshold[2])
-				+ screenSim(other, threshold[3]) + ramSim(other, threshold[4])
-				+ ramMaxSupportTypeSim(other, threshold[5])
-				+ hddSizeSim(other, threshold[6])
-				+ hddTypeSim(other, threshold[7])
-				+ opticalDriveSim(other, threshold[8])
-				+ weightTypeSim(other, threshold[9])
-				+ graphicsCardSim(other, threshold[10])
-				+ osSim(other, threshold[11])
-				+ cpuTypeSim(other, threshold[12])
-				+ cpuSpeedSim(other, threshold[13])
-				+ cpuCacheSim(other, threshold[14])
-				+ batteryTypeSim(other, threshold[15])
-				+ warrantySim(other, threshold[16])
-				+ priceSim(other, threshold[17]);
+		// + warrantySim(other, threshold[16])
+		// + priceSim(other, threshold[17]);
 
 		return sim;
 	}
