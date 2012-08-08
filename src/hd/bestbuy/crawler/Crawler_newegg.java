@@ -54,30 +54,29 @@ public class Crawler_newegg {
 	public void setStartUrl(String startUrl) {
 		this.startUrl = startUrl;
 	}
-/*
-	public String getPropertyByXPath(HtmlPage page, String xPath) {
-		List<?> divs = page.getByXPath(xPath);
-		if (divs.size() > 0) {
-			if (divs.size() == 1) {
-				DomText property = (DomText) divs.get(0);
-				return property.getTextContent();
-			} else {
-				if (divs.size() == 2) {
-					DomText property = (DomText) divs.get(1);
+	/*
+		public String getPropertyByXPath(HtmlPage page, String xPath) {
+			List<?> divs = page.getByXPath(xPath);
+			if (divs.size() > 0) {
+				if (divs.size() == 1) {
+					DomText property = (DomText) divs.get(0);
 					return property.getTextContent();
-				}
-				if (divs.size() == 4) {
-					DomText property = (DomText) divs.get(2);
-					return property.getTextContent();
+				} else {
+					if (divs.size() == 2) {
+						DomText property = (DomText) divs.get(1);
+						return property.getTextContent();
+					}
+					if (divs.size() == 4) {
+						DomText property = (DomText) divs.get(2);
+						return property.getTextContent();
+					}
 				}
 			}
+			return "NULL";
 		}
-		return "NULL";
-	}
-
-*/	
+	
+	*/	
 	private  boolean isSkipLink (String tmp){
-		//if( tmp.startsWith("/")||(!tmp.contains("newegg.com"))||(!tmp.startsWith("http")))
 			if(tmp.startsWith("http://www.newegg.com")
 					&& (tmp.contains("name=Laptops-Notebooks")
 					 ||tmp.contains("Item="))&&(!tmp.contains("ProductReview"))
@@ -103,8 +102,6 @@ public class Crawler_newegg {
 				if(isSkipLink(anchor.getHrefAttribute())){
 					continue;
 				}
-				//System.out.println(anchor.getHrefAttribute());
-				//printWriter.println(anchor.getHrefAttribute());
 				tmp.add(anchor.getHrefAttribute());
 			}
 			
@@ -169,35 +166,33 @@ public class Crawler_newegg {
 				crawled.add(tmp);
 				System.out.println("ed" + crawled.size());
 			}
-			/*for(String newPage : get_all_link(tmp)){
-					crawled.add(newPage);
-			}
-			crawled.add(tmp);
-			System.out.println("ed" + crawled.size());*/
 		}
 	}
-
+	
 	public void printPages(){
 		for (String p : crawledItems){
 			System.out.println(p);
 		}
 	}
 	
+	
+	
 	public void closeCrawler() {
 		client.closeAllWindows();
 	}
-
 	
 	  public static void main(String[] args) throws
 	  FailingHttpStatusCodeException, MalformedURLException, IOException {
-	  List <String> seed = new ArrayList<String>();
-	  seed.add("http://www.newegg.com/Store/SubCategory.aspx?SubCategory=32&name=Laptops-Notebooks");
-	  Crawler_newegg one = new Crawler_newegg(); 
-	  one.crawl_web(seed);
-	  one.printPages();
-	  one.closeCrawler(); 
-	  
+		  List <String> seed = new ArrayList<String>();
+		  seed.add("http://www.newegg.com/Store/SubCategory.aspx?SubCategory=32&name=Laptops-Notebooks");
+		  seed.add("http://www.newegg.com/chromebook?name=Chromebooks");
+		  seed.add("http://www.newegg.com/ultrabooks/?name=Ultrabooks");
+		  seed.add("http://www.newegg.com/Store/SubCategory.aspx?SubCategory=772&name=Netbooks");
+		  
+		  Crawler_newegg robot = new Crawler_newegg(); 
+		  robot.crawl_web(seed);
+		  robot.printPages();
+		  robot.closeCrawler(); 
 	  }
-	 
 }
 
