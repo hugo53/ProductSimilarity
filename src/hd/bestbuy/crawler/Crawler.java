@@ -66,10 +66,26 @@ public class Crawler {
 			MalformedURLException, IOException {
 		try {
 			page = client.getPage(url);
-
+			//String originalHtml	= page.getWebResponse().getContentAsString();
+			String originalHtml = page.asText();
+			System.out.println(originalHtml);
 			// GET INFORS
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			// get name
-			String name = getPropertyByXPath(page,
+			/*String name = getPropertyByXPath(page,
 					"//*[@id=\"productsummary\"]/h1/text()");
 
 			// get model
@@ -88,10 +104,10 @@ public class Crawler {
 			// get warranty part
 			String warrantyPart = getPropertyByXPath(page,
 					"//*[@id=\"tabbed-specifications\"]/ul/li[1]/div[2]/text()");
-
-			System.out.println(name + "--" + model + "--" + sku + "--"
+*/
+			/*System.out.println(name + "--" + model + "--" + sku + "--"
 					+ reviewPoint + "--" + warrantyPart);
-			// + reviewPoint + "-- " + warrantyPart);
+			*/// + reviewPoint + "-- " + warrantyPart);
 		} catch (FailingHttpStatusCodeException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -102,7 +118,6 @@ public class Crawler {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
 
 	public void crawlAllPages() {
@@ -113,11 +128,12 @@ public class Crawler {
 		client.closeAllWindows();
 	}
 
-	/*
-	 * public static void main(String[] args) throws
-	 * FailingHttpStatusCodeException, MalformedURLException, IOException {
-	 * Crawler one = new Crawler(); one.crawl(
-	 * "http://www.bestbuy.com/site/HP+-+15.6%26%2334%3B+Pavilion+Laptop+-+8GB+Memory+-+750GB+Hard+Drive+-+Natural+Silver/5608295.p?id=1218672046425&skuId=5608295"
-	 * ); one.closeCrawler(); }
-	 */
+	
+	  public static void main(String[] args) throws
+	  FailingHttpStatusCodeException, MalformedURLException, IOException {
+	  Crawler one = new Crawler(); one.crawl(
+	  "http://www.newegg.com/Product/Product.aspx?Item=N82E16834246856"
+	  ); one.closeCrawler(); }
+	 
 }
+
