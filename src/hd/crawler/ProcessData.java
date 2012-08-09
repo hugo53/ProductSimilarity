@@ -1,4 +1,4 @@
-package hd.bestbuy.crawler;
+package hd.crawler;
 
 import java.util.HashSet;
 import java.util.StringTokenizer;

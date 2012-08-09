@@ -1,6 +1,6 @@
 package hd.product;
 
-import hd.bestbuy.crawler.ProcessData;
+import hd.crawler.ProcessData;
 
 public class Laptop {
 

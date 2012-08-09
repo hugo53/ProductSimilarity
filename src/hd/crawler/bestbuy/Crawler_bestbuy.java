@@ -1,4 +1,4 @@
-package hd.bestbuy.crawler;
+package hd.crawler.bestbuy;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;

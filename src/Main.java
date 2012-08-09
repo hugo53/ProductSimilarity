@@ -1,4 +1,4 @@
-import hd.bestbuy.crawler.ProcessData;
+import hd.crawler.ProcessData;
 import hd.product.Laptop;
 
 import java.io.BufferedReader;
