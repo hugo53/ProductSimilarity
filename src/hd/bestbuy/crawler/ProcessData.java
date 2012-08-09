@@ -3,7 +3,15 @@ package hd.bestbuy.crawler;
 import java.util.HashSet;
 import java.util.StringTokenizer;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ProcessData.
+ *
+ * @author Administrator
+ */
 public class ProcessData {
+	
+	/** The s_stop words. */
 	public static String[] s_stopWords = { "m", "a", "about", "above", "above",
 			"across", "after", "afterwards", "again", "against", "all",
 			"almost", "alone", "along", "already", "also", "although",
@@ -52,9 +60,13 @@ public class ProcessData {
 			"would", "yet", "you", "your", "yours", "yourself", "yourselves",
 			"the" };
 
+	/** The stopwords. */
 	public static HashSet<String> stopwords = new HashSet<String>(
 			s_stopWords.length);
 
+	/**
+	 * Instantiates a new process data.
+	 */
 	public ProcessData() {
 		for (String s : s_stopWords) {
 			stopwords.add(s);
@@ -62,6 +74,13 @@ public class ProcessData {
 	}
 
 	// Common Words
+	/**
+	 * Count common word.
+	 *
+	 * @param firstString the first string
+	 * @param secondString the second string
+	 * @return the int
+	 */
 	public static int countCommonWord(String firstString, String secondString) {
 		int numberCommonWord = 0;
 		String[] firstTokens = firstString.split(" ");
@@ -78,11 +97,23 @@ public class ProcessData {
 	}
 
 	// Check stopword
+	/**
+	 * Checks if is stopword.
+	 *
+	 * @param s the s
+	 * @return true, if is stopword
+	 */
 	public static boolean isStopword(String s) {
 		return stopwords.contains(s);
 	}
 
 	// Remove Stopwords
+	/**
+	 * Removes the stopwords.
+	 *
+	 * @param beRemovedString the be removed string
+	 * @return the string
+	 */
 	public static String removeStopwords(String beRemovedString) {
 		String resultString = new String();
 		StringTokenizer tokenizer = new StringTokenizer(beRemovedString);
@@ -97,6 +128,14 @@ public class ProcessData {
 	}
 
 	// Compute similarity using commond word
+	/**
+	 * Sim by common word.
+	 *
+	 * @param first the first
+	 * @param second the second
+	 * @param threshold the threshold
+	 * @return the double
+	 */
 	public static double simByCommonWord(String first, String second,
 			int threshold) {
 		int commonWord = ProcessData.countCommonWord(first, second);
@@ -111,7 +150,10 @@ public class ProcessData {
 	}
 
 	/**
-	 * @param args
+	 * Gets the anc.
+	 *
+	 * @param a the a
+	 * @return the anc
 	 */
 	/*
 	 * public static void main(String[] args) { // TODO Auto-generated method
@@ -121,4 +163,6 @@ public class ProcessData {
 	 * )); System.out.println(one.countCommonWord("hello word one",
 	 * "hello star one")); }
 	 */
+
+
 }
