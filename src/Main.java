@@ -1,11 +1,10 @@
 import hd.bestbuy.crawler.ProcessData;
 import hd.product.Laptop;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class Main {
 
@@ -35,7 +34,7 @@ public class Main {
 	}
 
 	public static Laptop[] read(File file) throws FileNotFoundException {
-		/*/Scanner in = new Scanner(file);
+		Scanner in = new Scanner(file);
 		Laptop[] rst = new Laptop[4];
 		int i = 0;
 		while (in.hasNext()) {
@@ -45,27 +44,7 @@ public class Main {
 		}
 		in.close();
 		return rst;
-		*/
-		
-		Laptop[] rst = new Laptop[4];
-		int i = 0;
-		try {
-		      FileReader fr = new FileReader(file);
-		      BufferedReader br = new BufferedReader(fr);
 
-		      String s;
-		      while((s = br.readLine()) != null){
-		    	  rst[i] = readLaptop(s);
-				  i++;
-		      }
-		        
-
-		      fr.close();
-		    }
-		    catch(Exception e) {
-		      System.out.println("Exception: " + e);
-		    }
-		return rst;
 	}
 
 	/**
@@ -80,13 +59,14 @@ public class Main {
 		PrintWriter out = new PrintWriter(outfile);
 
 		Laptop[] rst = read(infile);
-			for (int i = 0; i < rst.length; i++) {
-				for (int j = 0; j < rst.length; j++) {
-					//System.out.println(rst[i] +" "+rst[j] );
-					out.println("Simi(" + i + " , " + j + ") = "
-							+ rst[i].similarTo(rst[j], threshold, featureWeights));
-				}
+
+		for (int i = 0; i < rst.length; i++) {
+			for (int j = 0; j < rst.length; j++) {
+				out.println("Simi(" + i + " , " + j + ") = "
+						+ rst[i].similarTo(rst[j], threshold, featureWeights));
 			}
+		}
+
 		System.out.println("DONE!\nPLEASE CHECK data/output file");
 		out.close();
 

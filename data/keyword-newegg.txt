@@ -1,0 +1,15 @@
+Series
+Model
+CPU Type
+CPU Speed
+CPU L2 Cache
+Screen Size
+Operating System
+GPU/VPU
+HDD
+HDD Interface
+Memory
+Max Memory Supported
+Optical Drive Type
+Weight
+Battery

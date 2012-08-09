@@ -1,0 +1,1447 @@
+<div id="Specs" class="">
+  <fieldset>
+    <h3 class="specTitle">
+      Model
+    </h3>
+    <dl>
+      <dt>
+        Brand
+      </dt>
+      <dd>
+        Acer
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Series
+      </dt>
+      <dd>
+        Aspire
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Model
+      </dt>
+      <dd>
+        AS5560-7402
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Part#
+      </dt>
+      <dd>
+        LX.RNT02.093
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      General
+    </h3>
+    <dl>
+      <dt>
+        Color
+      </dt>
+      <dd>
+        Mesh Black
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Operating System
+      </dt>
+      <dd>
+        Windows 7 Home Premium 64-Bit
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        CPU Type
+      </dt>
+      <dd>
+        AMD Quad-Core A6-3420M 1.5GHz
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Screen
+      </dt>
+      <dd>
+        15.6"
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Memory Size
+      </dt>
+      <dd>
+        4GB DDR3
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Hard Disk
+      </dt>
+      <dd>
+        500GB
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Optical Drive
+      </dt>
+      <dd>
+        DVD Super Multi
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Graphics Card
+      </dt>
+      <dd>
+        AMD Radeon HD 6520G Graphics
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Video Memory
+      </dt>
+      <dd>
+        Shared memory
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Communication
+      </dt>
+      <dd>
+        Gigabit LAN and WLAN
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Dimensions
+      </dt>
+      <dd>
+        15" x 9.96" x 0.99"-1.3"
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Weight
+      </dt>
+      <dd>
+        5.74 lbs.
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      CPU
+    </h3>
+    <dl>
+      <dt>
+        CPU Type
+      </dt>
+      <dd>
+        AMD A-Series
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        CPU Speed
+      </dt>
+      <dd>
+        A6-3420M(1.5GHz)
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        CPU L2 Cache
+      </dt>
+      <dd>
+        4MB
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      Chipset
+    </h3>
+    <dl>
+      <dt>
+        Chipset
+      </dt>
+      <dd>
+        AMD A60M FCH
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      Display
+    </h3>
+    <dl>
+      <dt>
+        Screen Size
+      </dt>
+      <dd>
+        15.6"
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Wide Screen Support
+      </dt>
+      <dd>
+        Yes
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Resolution
+      </dt>
+      <dd>
+        1366 x 768
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        LCD Features
+      </dt>
+      <dd>
+        LED backlight &amp; Acer CineCrystal Technology
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      Operating Systems
+    </h3>
+    <dl>
+      <dt>
+        Operating System
+      </dt>
+      <dd>
+        Windows 7 Home Premium 64-Bit
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      Graphics
+    </h3>
+    <dl>
+      <dt>
+        GPU/VPU
+      </dt>
+      <dd>
+        AMD Radeon HD 6520G
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Video Memory
+      </dt>
+      <dd>
+        Shared system memory
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Graphic Type
+      </dt>
+      <dd>
+        Integrated Card
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      Hard Drive
+    </h3>
+    <dl>
+      <dt>
+        HDD
+      </dt>
+      <dd>
+        500GB
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        HDD RPM
+      </dt>
+      <dd>
+        5400rpm
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        HDD Interface
+      </dt>
+      <dd>
+        SATA
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      Memory
+    </h3>
+    <dl>
+      <dt>
+        Memory
+      </dt>
+      <dd>
+        4GB
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Memory Speed
+      </dt>
+      <dd>
+        DDR3 1066
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Memory Spec
+      </dt>
+      <dd>
+        2GB x 2
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Memory Slot (Total)
+      </dt>
+      <dd>
+        2
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Memory Slot (Available)
+      </dt>
+      <dd>
+        0
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Max Memory Supported
+      </dt>
+      <dd>
+        8GB
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      Optical Drive
+    </h3>
+    <dl>
+      <dt>
+        Optical Drive Type
+      </dt>
+      <dd>
+        DVD Super Multi
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Optical Drive Spec
+      </dt>
+      <dd>
+        8X DVD-Super Multi Double-Layer Drive
+        <br/>
+        <br/>
+        Read: 24X CD-ROM, 24X CD-R, 24X CD-RW, 8X DVD-ROM, 8X DVD-R, 8X DVD+R, 6X DVD-ROM DL (double-layer), 6X DVD-R DL (double-layer), 6X DVD+R DL (double-layer), 6X DVD-RW, 6X DVD+RW, 5X DVD-RAM
+        <br/>
+        <br/>
+        Write: 24X CD-R, 16X CD-RW, 8X DVD-R, 8X DVD+R, 4X DVD-R DL (double-layer), 4X DVD+R DL (double-layer), 6X DVD-RW, 8X DVD+RW, 5X DVD-RAM
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      Communications
+    </h3>
+    <dl>
+      <dt>
+        LAN
+      </dt>
+      <dd>
+        10/100/1000Mbps
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        WLAN
+      </dt>
+      <dd>
+        802.11b/g/n Wireless LAN
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      Ports
+    </h3>
+    <dl>
+      <dt>
+        USB
+      </dt>
+      <dd>
+        3
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Video Port
+      </dt>
+      <dd>
+        1 x VGA
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        HDMI
+      </dt>
+      <dd>
+        1 x HDMI
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Other port
+      </dt>
+      <dd>
+        Kensington Lock Slot
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Audio Ports
+      </dt>
+      <dd>
+        1 x Microphone jack;  1 x  Headphone jack
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      Input Device
+    </h3>
+    <dl>
+      <dt>
+        Touchpad
+      </dt>
+      <dd>
+        Multi-Gesture Touchpad supporting two-finger scroll, pinch, rotate and flip
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Keyboard
+      </dt>
+      <dd>
+        Dedicated Numeric Keypad
+        <br/>
+        Media Control Function Keys
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      Supplemental Drive
+    </h3>
+    <dl>
+      <dt>
+        Card Reader
+      </dt>
+      <dd>
+        Secure Digital(SD), MultiMediaCard (MMC), Memory Stick(MS), Memory Stick PRO(MS PRO), xD-Picture Card(xD)
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Webcam
+      </dt>
+      <dd>
+        1.3 Megapixel HD Webcam (1280 x 1024)
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      Power
+    </h3>
+    <dl>
+      <dt>
+        Battery
+      </dt>
+      <dd>
+        6-cell lithium ion
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Battery Life
+      </dt>
+      <dd>
+        Up to 4-hours
+      </dd>
+    </dl>
+  </fieldset>
+  <fieldset>
+    <h3 class="specTitle">
+      Physical Specifications
+    </h3>
+    <dl>
+      <dt>
+        Dimensions
+      </dt>
+      <dd>
+        15" x 9.96" x 0.99"-1.3"
+      </dd>
+    </dl>
+    <dl>
+      <dt>
+        Weight
+      </dt>
+      <dd>
+        5.74 lbs.
+      </dd>
+    </dl>
+  </fieldset>
+</div>
+522
+herrr
+att: <div id="Specs" class="">
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Model
+herrr
+att:         Brand
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         Acer
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Series
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Model
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Part#
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         LX.RNT02.093
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       General
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Color
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         Mesh Black
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Operating System
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         CPU Type
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Screen
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         15.6"
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Memory Size
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         4GB DDR3
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Hard Disk
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         500GB
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Optical Drive
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         DVD Super Multi
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Graphics Card
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         AMD Radeon HD 6520G Graphics
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Video Memory
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         Shared memory
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Communication
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         Gigabit LAN and WLAN
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Dimensions
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         15" x 9.96" x 0.99"-1.3"
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Weight
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       CPU
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         CPU Type
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         CPU Speed
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         CPU L2 Cache
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Chipset
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Chipset
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         AMD A60M FCH
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Display
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Screen Size
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Wide Screen Support
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         Yes
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Resolution
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         1366 x 768
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         LCD Features
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         LED backlight &amp; Acer CineCrystal Technology
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Operating Systems
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Operating System
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Graphics
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         GPU/VPU
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Video Memory
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         Shared system memory
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Graphic Type
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         Integrated Card
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Hard Drive
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         HDD
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         HDD RPM
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         5400rpm
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         HDD Interface
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Memory
+herrr
+att:         Memory
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Memory Speed
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         DDR3 1066
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Memory Spec
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         2GB x 2
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Memory Slot (Total)
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         2
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Memory Slot (Available)
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         0
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Max Memory Supported
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Optical Drive
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Optical Drive Type
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Optical Drive Spec
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         8X DVD-Super Multi Double-Layer Drive
+herrr
+att:         <br/>
+herrr
+att:         <br/>
+herrr
+att:         Read: 24X CD-ROM, 24X CD-R, 24X CD-RW, 8X DVD-ROM, 8X DVD-R, 8X DVD+R, 6X DVD-ROM DL (double-layer), 6X DVD-R DL (double-layer), 6X DVD+R DL (double-layer), 6X DVD-RW, 6X DVD+RW, 5X DVD-RAM
+herrr
+att:         <br/>
+herrr
+att:         <br/>
+herrr
+att:         Write: 24X CD-R, 16X CD-RW, 8X DVD-R, 8X DVD+R, 4X DVD-R DL (double-layer), 4X DVD+R DL (double-layer), 6X DVD-RW, 8X DVD+RW, 5X DVD-RAM
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Communications
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         LAN
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         10/100/1000Mbps
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         WLAN
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         802.11b/g/n Wireless LAN
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Ports
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         USB
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         3
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Video Port
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         1 x VGA
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         HDMI
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         1 x HDMI
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Other port
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         Kensington Lock Slot
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Audio Ports
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         1 x Microphone jack;  1 x  Headphone jack
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Input Device
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Touchpad
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         Multi-Gesture Touchpad supporting two-finger scroll, pinch, rotate and flip
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Keyboard
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         Dedicated Numeric Keypad
+herrr
+att:         <br/>
+herrr
+att:         Media Control Function Keys
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Supplemental Drive
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Card Reader
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         Secure Digital(SD), MultiMediaCard (MMC), Memory Stick(MS), Memory Stick PRO(MS PRO), xD-Picture Card(xD)
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Webcam
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         1.3 Megapixel HD Webcam (1280 x 1024)
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Power
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Battery
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Battery Life
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         Up to 4-hours
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att:   <fieldset>
+herrr
+att:     <h3 class="specTitle">
+herrr
+att:       Physical Specifications
+herrr
+att:     </h3>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Dimensions
+herrr
+att:       </dt>
+herrr
+att:       <dd>
+herrr
+att:         15" x 9.96" x 0.99"-1.3"
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:     <dl>
+herrr
+att:       <dt>
+herrr
+att:         Weight
+herrr
+att:       </dd>
+herrr
+att:     </dl>
+herrr
+att:   </fieldset>
+herrr
+att: </div>

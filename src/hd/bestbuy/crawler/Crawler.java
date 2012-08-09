@@ -1,4 +1,4 @@
-package hd.crawler.bestbuy;
+package hd.bestbuy.crawler;
 
 // match with class='label' and class = 'data' in htmlstring by String originalHtml = page.getWebResponse().getContentAsString();
 import java.io.File;
@@ -20,7 +20,7 @@ import com.gargoylesoftware.htmlunit.html.DomText;
 import com.gargoylesoftware.htmlunit.html.HtmlDivision;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
-public class Extraction_bestbuy {
+public class Crawler {
 
 	private WebClient client = null;
 	private HtmlPage page = null;
@@ -28,7 +28,7 @@ public class Extraction_bestbuy {
 	private List<String> keywordList = new ArrayList<String>();
 	private Map<String, String> attributeMap = new HashMap<String, String>();
 
-	public Extraction_bestbuy() {
+	public Crawler() {
 		initKeywordList(new File("data/keywords.txt"));
 
 		client = new WebClient(BrowserVersion.FIREFOX_3_6);
@@ -88,10 +88,9 @@ public class Extraction_bestbuy {
 		return "NULL";
 	}
 
-	public void crawl(String url) throws FailingHttpStatusCodeException,
-			MalformedURLException, IOException {
-		File outfile = new File("data/data.cvs");
-		PrintWriter out = new PrintWriter(outfile);
+	public void crawl(String url, File outfile)
+			throws FailingHttpStatusCodeException, MalformedURLException,
+			IOException {
 
 		try {
 			page = client.getPage(url);
@@ -126,18 +125,17 @@ public class Extraction_bestbuy {
 					.getByXPath("//*[@id=\"tabbed-specifications\"]");
 
 			HtmlDivision one = (HtmlDivision) attributeDivs.get(0);
+
 			String[] attributeLines = one.asText().split("\n");
 			// out.println(attributeLines.length);
 			for (int i = 0; i < attributeLines.length; i++) {
 				if (keywordList.contains(attributeLines[i])) {
-					out.println("(key, value)" + "(" + attributeLines[i] + ","
-							+ attributeLines[i + 1]);
 					attributeMap.put(attributeLines[i], attributeLines[i + 1]);
 				}
 				i = i + 1;
 			}
 
-			writeCVS(attributeMap, new File("data/attrs.cvs"));
+			writeCVS(attributeMap, outfile);
 
 			/*
 			 * // get screen
@@ -206,7 +204,7 @@ public class Extraction_bestbuy {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		out.close();
+
 	}
 
 	public void crawlAllPages() {
@@ -270,11 +268,13 @@ public class Extraction_bestbuy {
 	public static void main(String[] args)
 			throws FailingHttpStatusCodeException, MalformedURLException,
 			IOException {
-		Extraction_bestbuy one = new Extraction_bestbuy();
+		Crawler one = new Crawler();
 		// one.crawl("http://www.bestbuy.com/site/HP+-+15.6%26%2334%3B+Pavilion+Laptop+-+8GB+Memory+-+750GB+Hard+Drive+-+Natural+Silver/5608295.p?id=1218672046425&skuId=5608295");
-		one.crawl("http://www.bestbuy.com/site/Lenovo+-+ThinkPad+Edge+031946U+15.6%22+LED+Notebook+-+Intel+Core+i3+i3-380M+2.53+GHz+-+Black+Textured/5299059.p;jsessionid=2B8F7647BA13D0D9128E50984111BA59.bbolsp-app05-30?id=1218631451356&skuId=5299059&st=thinkpad&cp=1&lp=2");
+		File outfile = new File("bestbuyoutfile");
+		one.crawl(
+				"http://www.bestbuy.com/site/Lenovo+-+ThinkPad+Edge+031946U+15.6%22+LED+Notebook+-+Intel+Core+i3+i3-380M+2.53+GHz+-+Black+Textured/5299059.p;jsessionid=2B8F7647BA13D0D9128E50984111BA59.bbolsp-app05-30?id=1218631451356&skuId=5299059&st=thinkpad&cp=1&lp=2",
+				outfile);
 		one.closeCrawler();
 		System.out.println(one.inchesScreen("15.6''"));
 	}
-
 }
